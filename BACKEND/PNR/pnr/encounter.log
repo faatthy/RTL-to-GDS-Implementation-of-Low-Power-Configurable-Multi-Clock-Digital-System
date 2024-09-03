@@ -1,0 +1,1610 @@
+Checking out Encounter license ...
+SOC_Encounter_GXL 8.1 license checkout succeeded.
+This Encounter release has been compiled with OA version 22.04-p032.
+sourcing /usr/Cadence/SOC/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2008.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-p004_1 (32bit) 11/04/2008 14:34 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-p008 NR081027-0018/USR58-UB (database version 2.30, 67.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.10-p002_1 (32bit) 10/23/2008 22:04:14 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-p016_1 (32bit) Oct 26 2008 15:11:51 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.10-p009
+--- Starting "First Encounter v08.10-p004_1" on Sat Aug 17 14:53:43 2024 (mem=62.2M) ---
+--- Running on localhost.localdomain (x86_64 w/Linux 2.6.32-431.29.2.el6.x86_64) ---
+This version was compiled on Tue Nov 4 14:34:21 PST 2008.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD_INTERNAL> setUIVar rda_Input ui_topcell SYS_TOP
+<CMD_INTERNAL> setUIVar rda_Input ui_netlist /home/ahesham/Projects/System_pnr/DFT/netlists/SYS_TOP.v
+<CMD_INTERNAL> setUIVar rda_Input ui_timelib,min /home/ahesham/Projects/System_pnr/std_cells/libs/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.lib
+<CMD_INTERNAL> setUIVar rda_Input ui_timelib,max /home/ahesham/Projects/System_pnr/std_cells/libs/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.lib
+<CMD_INTERNAL> setUIVar rda_Input ui_timelib /home/ahesham/Projects/System_pnr/std_cells/libs/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.lib
+<CMD_INTERNAL> setUIVar rda_Input ui_leffile {/home/ahesham/Projects/System_pnr/std_cells/lef/tsmc13fsg_7lm_tech.lef /home/ahesham/Projects/System_pnr/std_cells/lef/tsmc13_m_macros.lef /home/ahesham/Projects/System_pnr/pnr/import/SYS_TOP.lef}
+<CMD_INTERNAL> setUIVar rda_Input ui_captbl_file /home/ahesham/Projects/System_pnr/std_cells/captables/tsmc13fsg.capTbl
+<CMD_INTERNAL> setUIVar rda_Input ui_timingcon_file /home/ahesham/Projects/System_pnr/DFT/sdc/SYS_TOP_func.sdc
+<CMD_INTERNAL> setUIVar rda_Input ui_pwrnet VDD
+<CMD_INTERNAL> setUIVar rda_Input ui_gndnet VSS
+<CMD> commitConfig
+
+Loading Lef file /home/ahesham/Projects/System_pnr/std_cells/lef/tsmc13fsg_7lm_tech.lef...
+
+Loading Lef file /home/ahesham/Projects/System_pnr/std_cells/lef/tsmc13_m_macros.lef...
+Set DBUPerIGU to M2 pitch 820.
+Initializing default via types and wire widths ...
+
+Loading Lef file /home/ahesham/Projects/System_pnr/pnr/import/SYS_TOP.lef...
+**WARN: (SOCLF-246):	The 'UNITS' attribute should be set
+in the first lef file (technology lef). There is an attempt to set it
+in subsequent lef files which will be ignored.
+**WARN: (SOCLF-46):	Class CORE macro 'SYS_TOP' has no SITE statement defined.
+Class CORE macros require a SITE statement. The SITE FE_CORE_0 was
+created and will be used for this macro, using height 180.6000 that
+matches the macro SIZE height, and width 0.4100 that matches the
+m2 routing pitch. Define the site explicitly in the LEF file, to
+this message in the future.
+
+Power Planner/ViaGen version 8.1.45 promoted on 09/01/2008.
+viaInitial starts at Sat Aug 17 14:53:54 2024
+viaInitial ends at Sat Aug 17 14:53:54 2024
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/home/ahesham/Projects/System_pnr/DFT/netlists/SYS_TOP.v'
+Inserting temporary buffers to remove assignment statements.
+Non-leaf cell SYS_TOP will be treated as a leaf cell.
+
+*** Memory Usage v0.144 (Current mem = 188.977M, initial mem = 62.238M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=189.0M) ***
+Set top cell to SYS_TOP.
+Reading max timing library '/home/ahesham/Projects/System_pnr/std_cells/libs/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.lib' ...
+No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+ read 618 cells in library 'scmetro_tsmc_cl013g_rvt_ss_1p08v_125c' 
+Reading min timing library '/home/ahesham/Projects/System_pnr/std_cells/libs/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.lib' ...
+No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+ read 618 cells in library 'scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c' 
+Reading max timing library '/home/ahesham/Projects/System_pnr/std_cells/libs/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.lib' ...
+No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+ read 618 cells in library 'scmetro_tsmc_cl013g_rvt_tt_1p2v_25c' 
+Reading min timing library '/home/ahesham/Projects/System_pnr/std_cells/libs/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.lib' ...
+No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+ read 618 cells in library 'scmetro_tsmc_cl013g_rvt_tt_1p2v_25c' 
+**WARN: (SOCSYC-2):	Timing is not defined for cell SYS_TOP.
+*** End library_loading (cpu=0.21min, mem=90.9M, fe_cpu=0.27min, fe_mem=279.9M) ***
+Starting recursive module instantiation check.
+No recursion found.
+*****NEW dbFlattenCell is used.
+Flattening Cell SYS_TOP ...
+*** Netlist is unique.
+** info: there are 2532 modules.
+** info: there are 1808 stdCell insts.
+
+*** Memory Usage v0.144 (Current mem = 280.145M, initial mem = 62.238M) ***
+CTE reading timing constraint file '/home/ahesham/Projects/System_pnr/DFT/sdc/SYS_TOP_func.sdc' ...
+**WARN: (TCLCMD-1013):	The SDC set_operating_conditions assertion is not supported. Please use the Encounter setOpCond command to specify library and operating condition information. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File /home/ahesham/Projects/System_pnr/DFT/sdc/SYS_TOP_func.sdc, Line 9).
+
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_RX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File /home/ahesham/Projects/System_pnr/DFT/sdc/SYS_TOP_func.sdc, Line 18).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_TX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File /home/ahesham/Projects/System_pnr/DFT/sdc/SYS_TOP_func.sdc, Line 21).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'ALU_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File /home/ahesham/Projects/System_pnr/DFT/sdc/SYS_TOP_func.sdc, Line 24).
+
+INFO (CTE): read_dc_script finished with  4 WARNING
+WARNING (CTE-25): Line: 8 of File /home/ahesham/Projects/System_pnr/DFT/sdc/SYS_TOP_func.sdc : Skipped unsupported command: set_units
+
+
+*** Read timing constraints (cpu=0:00:00.1 mem=295.4M) ***
+*info - Done with setDoAssign with 33 assigns removed and 0 assigns could not be removed.
+Total number of combinational cells: 433
+Total number of sequential cells: 174
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2M BUFX10M BUFX12M BUFX14M BUFX16M BUFX18M BUFX20M BUFX24M BUFX32M BUFX3M CLKBUFX1M BUFX4M BUFX5M BUFX6M BUFX8M CLKBUFX12M CLKBUFX16M CLKBUFX20M CLKBUFX24M CLKBUFX2M CLKBUFX3M CLKBUFX32M CLKBUFX40M CLKBUFX4M CLKBUFX6M CLKBUFX8M
+Total number of usable buffers: 26
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1M CLKINVX12M CLKINVX16M CLKINVX20M CLKINVX24M CLKINVX2M CLKINVX3M CLKINVX32M CLKINVX40M CLKINVX4M CLKINVX6M CLKINVX8M INVX10M INVX12M INVX14M INVX16M INVX18M INVX2M INVX1M INVX20M INVX24M INVX32M INVX4M INVX3M INVX6M INVX5M INVX8M INVXLM
+Total number of usable inverters: 28
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1M DLY1X4M DLY2X1M DLY2X4M DLY3X1M DLY3X4M DLY4X1M DLY4X4M
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R0
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+**WARN: (SOCDC-1159):	Invalid input transition time. The default 0.1ps input transition time will be used.
+Set Input Pin Transition Delay as 0.1 ps.
+Reading Capacitance Table File /home/ahesham/Projects/System_pnr/std_cells/captables/tsmc13fsg.capTbl ...
+Cap Table was created using First Encounter 08.10-p004_1.
+Process name: tsmc13fsg.
+#WARNING (NRDB-21) The number of routing layer 7 in the database does not match with the value of 10 in the Extended Cap Table file.
+<CMD> create_library_set -name min_library -timing "../std_cells/libs/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.lib"
+<CMD> create_library_set -name max_library -timing "../std_cells/libs/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.lib"
+<CMD> create_library_set -name typ_library -timing "../std_cells/libs/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.lib"
+<CMD> create_constraint_mode -name func_mode -sdc_files {../DFT/sdc/SYS_TOP_func.sdc}
+<CMD> create_constraint_mode -name scan_mode -sdc_files {../DFT/sdc/SYS_TOP_scan.sdc}
+<CMD> create_constraint_mode -name capture_mode -sdc_files {../DFT/sdc/SYS_TOP_capture.sdc}
+<CMD> create_rc_corner -name RCcorner -cap_table "../std_cells/captables/tsmc13fsg.capTbl"
+<CMD> create_delay_corner -name min_corner -library_set min_library -rc_corner RCcorner
+<CMD> create_delay_corner -name max_corner -library_set max_library -rc_corner RCcorner
+<CMD> create_analysis_view -name setup1_analysis_view -delay_corner max_corner -constraint_mode func_mode
+<CMD> create_analysis_view -name hold1_analysis_view  -delay_corner min_corner -constraint_mode func_mode
+<CMD> create_analysis_view -name setup2_analysis_view -delay_corner max_corner -constraint_mode capture_mode
+<CMD> create_analysis_view -name hold2_analysis_view  -delay_corner min_corner -constraint_mode capture_mode
+<CMD> create_analysis_view -name setup3_analysis_view -delay_corner max_corner -constraint_mode scan_mode
+<CMD> create_analysis_view -name hold3_analysis_view  -delay_corner min_corner -constraint_mode scan_mode
+<CMD> set_analysis_view -setup {setup1_analysis_view setup2_analysis_view setup3_analysis_view } \
+                  -hold { hold1_analysis_view hold2_analysis_view hold3_analysis_view}
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File ../std_cells/captables/tsmc13fsg.capTbl ...
+Cap Table was created using First Encounter 08.10-p004_1.
+Process name: tsmc13fsg.
+#WARNING (NRDB-21) The number of routing layer 7 in the database does not match with the value of 10 in the Extended Cap Table file.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ Analysis View: setup1_analysis_view
+    RC-Corner Name        : RCcorner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '../std_cells/captables/tsmc13fsg.capTbl'
+    RC-Corner Default Res. Factor      : 1
+    RC-Corner Detail Res. Factor       : 1
+    RC-Corner Default Cap. Factor      : 1
+    RC-Corner Detail Cap. Factor       : 1
+    RC-Corner Cross Cap. Factor        : 1
+ Analysis View: setup2_analysis_view
+    RC-Corner Name        : RCcorner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '../std_cells/captables/tsmc13fsg.capTbl'
+    RC-Corner Default Res. Factor      : 1
+    RC-Corner Detail Res. Factor       : 1
+    RC-Corner Default Cap. Factor      : 1
+    RC-Corner Detail Cap. Factor       : 1
+    RC-Corner Cross Cap. Factor        : 1
+ Analysis View: setup3_analysis_view
+    RC-Corner Name        : RCcorner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '../std_cells/captables/tsmc13fsg.capTbl'
+    RC-Corner Default Res. Factor      : 1
+    RC-Corner Detail Res. Factor       : 1
+    RC-Corner Default Cap. Factor      : 1
+    RC-Corner Detail Cap. Factor       : 1
+    RC-Corner Cross Cap. Factor        : 1
+ Analysis View: hold1_analysis_view
+    RC-Corner Name        : RCcorner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '../std_cells/captables/tsmc13fsg.capTbl'
+    RC-Corner Default Res. Factor      : 1
+    RC-Corner Detail Res. Factor       : 1
+    RC-Corner Default Cap. Factor      : 1
+    RC-Corner Detail Cap. Factor       : 1
+    RC-Corner Cross Cap. Factor        : 1
+ Analysis View: hold2_analysis_view
+    RC-Corner Name        : RCcorner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '../std_cells/captables/tsmc13fsg.capTbl'
+    RC-Corner Default Res. Factor      : 1
+    RC-Corner Detail Res. Factor       : 1
+    RC-Corner Default Cap. Factor      : 1
+    RC-Corner Detail Cap. Factor       : 1
+    RC-Corner Cross Cap. Factor        : 1
+ Analysis View: hold3_analysis_view
+    RC-Corner Name        : RCcorner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '../std_cells/captables/tsmc13fsg.capTbl'
+    RC-Corner Default Res. Factor      : 1
+    RC-Corner Detail Res. Factor       : 1
+    RC-Corner Default Cap. Factor      : 1
+    RC-Corner Detail Cap. Factor       : 1
+    RC-Corner Cross Cap. Factor        : 1
+*Info: initialize multi-corner CTS.
+CTE reading timing constraint file '../DFT/sdc/SYS_TOP_func.sdc' ...
+**WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../DFT/sdc/SYS_TOP_func.sdc, Line 9).
+
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_RX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_func.sdc, Line 18).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_TX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_func.sdc, Line 21).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'ALU_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_func.sdc, Line 24).
+
+INFO (CTE): read_dc_script finished with  4 WARNING
+WARNING (CTE-25): Line: 8 of File ../DFT/sdc/SYS_TOP_func.sdc : Skipped unsupported command: set_units
+
+
+CTE reading timing constraint file '../DFT/sdc/SYS_TOP_capture.sdc' ...
+**WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../DFT/sdc/SYS_TOP_capture.sdc, Line 9).
+
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_RX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_capture.sdc, Line 18).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_TX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_capture.sdc, Line 21).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'ALU_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_capture.sdc, Line 24).
+
+INFO (CTE): read_dc_script finished with  4 WARNING
+WARNING (CTE-25): Line: 8 of File ../DFT/sdc/SYS_TOP_capture.sdc : Skipped unsupported command: set_units
+
+
+CTE reading timing constraint file '../DFT/sdc/SYS_TOP_scan.sdc' ...
+**WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../DFT/sdc/SYS_TOP_scan.sdc, Line 9).
+
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_RX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_scan.sdc, Line 19).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_TX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_scan.sdc, Line 22).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'ALU_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_scan.sdc, Line 25).
+
+INFO (CTE): read_dc_script finished with  4 WARNING
+WARNING (CTE-25): Line: 8 of File ../DFT/sdc/SYS_TOP_scan.sdc : Skipped unsupported command: set_units
+
+
+CTE reading timing constraint file '../DFT/sdc/SYS_TOP_func.sdc' ...
+**WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../DFT/sdc/SYS_TOP_func.sdc, Line 9).
+
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_RX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_func.sdc, Line 18).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_TX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_func.sdc, Line 21).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'ALU_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_func.sdc, Line 24).
+
+INFO (CTE): read_dc_script finished with  4 WARNING
+WARNING (CTE-25): Line: 8 of File ../DFT/sdc/SYS_TOP_func.sdc : Skipped unsupported command: set_units
+
+
+CTE reading timing constraint file '../DFT/sdc/SYS_TOP_capture.sdc' ...
+**WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../DFT/sdc/SYS_TOP_capture.sdc, Line 9).
+
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_RX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_capture.sdc, Line 18).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_TX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_capture.sdc, Line 21).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'ALU_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_capture.sdc, Line 24).
+
+INFO (CTE): read_dc_script finished with  4 WARNING
+WARNING (CTE-25): Line: 8 of File ../DFT/sdc/SYS_TOP_capture.sdc : Skipped unsupported command: set_units
+
+
+CTE reading timing constraint file '../DFT/sdc/SYS_TOP_scan.sdc' ...
+**WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../DFT/sdc/SYS_TOP_scan.sdc, Line 9).
+
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_RX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_scan.sdc, Line 19).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'UART_TX_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_scan.sdc, Line 22).
+
+**WARN: (TCLCMD-1068):	One or more of the target pins given with create_clock/create_generated_clock for clock 'ALU_CLK' are hierarchical pins. Tool has mapped these hierarchical pins to their respective flat pin(s). 'report_clocks -clocks' can be used to know the mapped flat pins for given clock. (File ../DFT/sdc/SYS_TOP_scan.sdc, Line 25).
+
+INFO (CTE): read_dc_script finished with  4 WARNING
+WARNING (CTE-25): Line: 8 of File ../DFT/sdc/SYS_TOP_scan.sdc : Skipped unsupported command: set_units
+
+
+Total number of combinational cells: 433
+Total number of sequential cells: 174
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX10M BUFX12M BUFX14M BUFX16M BUFX18M BUFX20M BUFX24M BUFX2M BUFX32M BUFX3M BUFX4M BUFX5M BUFX6M BUFX8M CLKBUFX12M CLKBUFX16M CLKBUFX1M CLKBUFX20M CLKBUFX24M CLKBUFX2M CLKBUFX32M CLKBUFX3M CLKBUFX40M CLKBUFX4M CLKBUFX6M CLKBUFX8M
+Total number of usable buffers: 26
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX12M CLKINVX16M CLKINVX1M CLKINVX20M CLKINVX24M CLKINVX2M CLKINVX32M CLKINVX3M CLKINVX40M CLKINVX4M CLKINVX6M CLKINVX8M INVX10M INVX12M INVX14M INVX16M INVX18M INVX1M INVX20M INVX24M INVX2M INVX32M INVX3M INVX4M INVX5M INVX6M INVX8M INVXLM
+Total number of usable inverters: 28
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1M DLY1X4M DLY2X1M DLY2X4M DLY3X1M DLY3X4M DLY4X1M DLY4X4M
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+<CMD> floorPlan -d 240.47 160.47 4.0 4.0 4.0 4.0
+Adjusting Core to Left to: 4.1000. Core to Bottom to: 4.1000.
+<CMD> addRing -spacing_bottom 0.5 -width_left 1 -width_bottom 1 -width_top 1 -spacing_top 0.5 -layer_bottom METAL5 -center 1 -stacked_via_top_layer METAL7 -width_right 1 -around core -jog_distance 0.205 -offset_bottom 0.205 -layer_top METAL5 -threshold 0.205 -offset_left 0.205 -spacing_right 0.5 -spacing_left 0.5 -offset_right 0.205 -offset_top 0.205 -layer_right METAL6 -nets {VSS VDD } -stacked_via_bottom_layer METAL1 -layer_left METAL6
+
+
+The power planner created 8 wires.
+
+<CMD> addStripe -block_ring_top_layer_limit METAL7 -max_same_layer_jog_length 0.8 -padcore_ring_bottom_layer_limit METAL5 -set_to_set_distance 60 -stacked_via_top_layer METAL7 -padcore_ring_top_layer_limit METAL7 -spacing 0.5 -merge_stripes_value 0.205 -layer METAL6 -block_ring_bottom_layer_limit METAL5 -width 1 -nets {VSS VDD } -stacked_via_bottom_layer METAL1
+**WARN: (SOCPP-2008):	AddStripe option -remove_floating_stripe_over_block is ON so all fragmented stripes within a block will be removed.
+  To turn OFF, setAddStripeOption -remove_floating_stripe_over_block 0.
+
+Starting stripe generation ...
+Stripe generation is complete.
+
+The power planner created 8 wires.
+
+<CMD> selectWire 5.6000 0.8000 6.6000 159.5900 6 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> zoomBox 15.289 114.000 -7.916 90.273
+<CMD> selectWire 4.1000 2.3000 5.1000 158.0900 6 VSS
+<CMD> deleteSelectedFromFPlan
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Sat Aug 17 15:41:01 2024
+
+Design Name: SYS_TOP
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (240.4700, 160.4700)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Net SO[3]: Found a geometry with bounding box (240.47,80.00) (240.67,80.20) outside design boundary.
+Violations for such geometries will be reported.
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Sat Aug 17 15:41:01 2024
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.000M)
+
+<CMD> verifyGeometry -noMinArea
+ *** Starting Verify Geometry (MEM: 305.2) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 8000
+  VERIFY GEOMETRY ...... SubArea : 1 of 1
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 1 complete 0 Viols. 0 Wrngs.
+VG: elapsed time: 1.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:01.8  MEM: 1.1M)
+
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 6 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 7 -crossoverViaTopLayer 7 -targetViaBottomLayer 1 -nets { VSS VDD }
+No routing obstructions were found in the design.
+*** Begin SPECIAL ROUTE on Sat Aug 17 15:44:55 2024 ***
+Sroute/fcroute version 8.1.45 promoted on 09/01/2008.
+SPECIAL ROUTE ran on directory: /home/ahesham/Projects/System_pnr/pnr
+SPECIAL ROUTE ran on machine: localhost.localdomain (Linux 2.6.32-431.29.2.el6.x86_64 x86_64 3.19Ghz)
+
+Begin option processing ...
+(from .sroute_21720.conf) srouteConnectPowerBump set to false
+(from .sroute_21720.conf) routeSelectNet set to "VSS VDD"
+(from .sroute_21720.conf) routeSpecial set to true
+(from .sroute_21720.conf) srouteCrossoverViaTopLayer set to 7
+(from .sroute_21720.conf) srouteFollowCorePinEnd set to 3
+(from .sroute_21720.conf) srouteFollowPadPin set to true
+(from .sroute_21720.conf) srouteJogControl set to "preferWithChanges differentLayer"
+(from .sroute_21720.conf) sroutePadPinAllPorts set to true
+(from .sroute_21720.conf) sroutePreserveExistingRoutes set to true
+(from .sroute_21720.conf) srouteTopLayerLimit set to 6
+(from .sroute_21720.conf) srouteTopTargetLayerLimit set to 7
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 484.00 megs.
+
+Reading LEF technology information...
+Reading floorplan and netlist information...
+**WARN: (SOCSR-2508):	Illegal pin orientation. "N" is assumed.
+**WARN: (SOCSR-2508):	Illegal pin orientation. "N" is assumed.
+**WARN: (SOCSR-2508):	Illegal pin orientation. "N" is assumed.
+**WARN: (SOCSR-2508):	Illegal pin orientation. "N" is assumed.
+**WARN: (SOCSR-2508):	Illegal pin orientation. "N" is assumed.
+**WARN: (SOCSR-2508):	Illegal pin orientation. "N" is assumed.
+**WARN: (SOCSR-2508):	Illegal pin orientation. "N" is assumed.
+Finished reading floorplan and netlist information.
+   **WARN: CORE MACRO SYS_TOP has no site specification
+   A total of 1 warning.
+Read in 15 layers, 7 routing layers, 1 overlap layer
+Read in 633 macros, 89 used
+Read in 88 components
+  88 core components: 88 unplaced, 0 placed, 0 fixed
+Read in 19 physical pins
+  19 physical pins: 0 unplaced, 0 placed, 19 fixed
+Read in 19 nets
+Read in 2 special nets, 2 routed
+Read in 19 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (SOCSR-554):	Top target layer is beyond top routing layer. Set top target layer to 6.
+**WARN: (SOCSR-1253):	Net VDD does not have standard cells to be routed. Please check net list.
+**WARN: (SOCSR-1254):	Net VDD does not have block pins to be routed. Please check net list.
+**WARN: (SOCSR-1255):	Net VDD does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (SOCSR-1256):	Net VDD does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net VDD does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+**WARN: (SOCSR-1253):	Net VSS does not have standard cells to be routed. Please check net list.
+**WARN: (SOCSR-1254):	Net VSS does not have block pins to be routed. Please check net list.
+**WARN: (SOCSR-1255):	Net VSS does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (SOCSR-1256):	Net VSS does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net VSS does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+**WARN: (SOCSR-468):	No core cells defined in COMPONENTS section
+ and/or   No core cells defined in SPECIALNETS VDD
+**WARN: (SOCSR-468):	No core cells defined in COMPONENTS section
+ and/or   No core cells defined in SPECIALNETS VDD
+CPU time for FollowPin 0 seconds
+**WARN: (SOCSR-468):	No core cells defined in COMPONENTS section
+ and/or   No core cells defined in SPECIALNETS VSS
+**WARN: (SOCSR-468):	No core cells defined in COMPONENTS section
+ and/or   No core cells defined in SPECIALNETS VSS
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 108
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 54
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 494.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 19 io pins ...
+ Updating DB with 64 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Sat Aug 17 15:44:55 2024
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Sat Aug 17 15:44:55 2024
+
+sroute post-processing starts at Sat Aug 17 15:44:55 2024
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Sat Aug 17 15:44:55 2024
+
+
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 9.04 megs
+sroute: Total Peak Memory used = 316.72 megs
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Sat Aug 17 15:45:07 2024
+
+Design Name: SYS_TOP
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (240.4700, 160.4700)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Net SI[3]: Found a geometry with bounding box (-0.10,120.10) (0.10,120.30) outside design boundary.
+Violations for such geometries will be reported.
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Sat Aug 17 15:45:07 2024
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.000M)
+
+<CMD> verifyGeometry -noMinArea
+ *** Starting Verify Geometry (MEM: 316.7) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 8000
+  VERIFY GEOMETRY ...... SubArea : 1 of 1
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 1 complete 0 Viols. 0 Wrngs.
+VG: elapsed time: 0.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:00.6  MEM: 0.0M)
+
+<CMD> saveDesign /home/ahesham/Projects/System_pnr/pnr/SYS_TOP.enc
+Writing Netlist "/home/ahesham/Projects/System_pnr/pnr/SYS_TOP.enc.dat/SYS_TOP.v" ...
+Saving configuration ...
+Saving preference file /home/ahesham/Projects/System_pnr/pnr/SYS_TOP.enc.dat/enc.pref.tcl ...
+Saving SI fix option to '/home/ahesham/Projects/System_pnr/pnr/SYS_TOP.enc.dat/siFix.option'...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=316.7M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=316.7M) ***
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+Creating constraint file...
+<CMD> saveFPlan /home/ahesham/Projects/System_pnr/pnr/SYS_TOP.fp
+<CMD> setDrawView fplan
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD_INTERNAL> uiSetTool move
+<CMD> selectObject Module U0_UART
+<CMD> deselectAll
+<CMD> selectWire 2.3000 2.3000 3.3000 158.0900 6 VSS
+<CMD_INTERNAL> uiSetTool select
+<CMD> deselectAll
+<CMD> selectWire 4.1000 135.9900 236.1600 136.2500 1 VDD
+<CMD> zoomBox 15.811 139.030 -19.649 84.798
+<CMD> deselectAll
+<CMD> zoomBox 8.935 134.945 -2.440 118.924
+<CMD> zoomBox -15.216 156.500 43.709 68.371
+<CMD_INTERNAL> uiSetTool move
+<CMD> selectObject Module U0_UART
+<CMD> zoomBox -15.216 164.322 60.396 71.501
+<CMD> setObjFPlanBox Module U0_UART 4.475 95.413 95.426 156.1065
+<CMD> zoomBox -24.643 162.814 55.016 123.739
+<CMD_INTERNAL> uiSetTool move
+<CMD_INTERNAL> uiSetTool move
+<CMD> setObjFPlanBox Module U0_UART 4.164 95.8245 95.184 156.0945
+<CMD> panCenter -13.875 144.286
+<CMD_INTERNAL> uiSetTool select
+<CMD> deselectAll
+<CMD> selectObject Module U0_UART
+<CMD_INTERNAL> uiSetTool select
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD_INTERNAL> uiSetTool move
+<CMD> zoomBox 103.641 162.946 -13.174 55.278
+<CMD_INTERNAL> uiSetTool move
+<CMD> zoomBox -15.280 115.076 38.316 86.609
+<CMD_INTERNAL> uiSetTool select
+<CMD_INTERNAL> uiSetTool move
+<CMD_INTERNAL> uiSetTool select
+<CMD_INTERNAL> uiSetTool move
+<CMD> deselectAll
+<CMD> selectObject Module U0_ALU
+<CMD> deselectAll
+<CMD> selectObject Module U0_UART
+<CMD> panCenter 43.449 96.270
+<CMD_INTERNAL> uiSetTool select
+<CMD> panCenter 96.770 165.495
+<CMD> zoomBox 125.320 180.227 -14.954 74.108
+<CMD> windowSelect 64.666 95.896 61.845 92.291
+<CMD_INTERNAL> uiSetTool move
+<CMD> selectObject Module U0_UART
+<CMD> zoomBox -28.253 137.466 83.862 68.633
+<CMD> zoomBox -12.509 113.064 38.531 85.206
+<CMD> placeDesign -inPlaceOpt -prePlaceOpt
+*** Starting placeDesign concurrent flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+*summary: 55 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.1) ***
+*** Starting "NanoPlace(TM) placement v0.845 (mem=316.7M)" ...
+*** Build Buffered Sizing Timing Model (Used Compact Buffer Set) ...(cpu=0:00:16.6 mem=375.0M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:16.6 mem=390.1M) ***
+Options: timingDriven ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (SOCDB-2082):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+#std cell=1753 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=1867 #term=7639 #term/net=4.09, #fixedIo=0, #floatIo=0, #fixedPin=19, #floatPin=0
+stdCell: 1753 single + 0 double + 0 multi
+Total standard cell length = 8.8416 (mm), area = 0.0254 (mm^2)
+
+
+Average module density = 0.719.
+Density for module 'U0_UART' = 0.726.
+       = stdcell_area 3383 (3981 um^2) / alloc_area 4662 (5486 um^2).
+Density for the rest of the design = 0.718.
+       = stdcell_area 18182 (21395 um^2) / alloc_area 25336 (29813 um^2).
+Pin Density = 0.354.
+            = total # of pins 7639 / total Instance area 21565.
+
+
+
+
+Identified 5 spare or floating instances, with no clusters.
+
+Iteration  1: Total net bbox = 4.687e+03 (3.60e+03 1.09e+03)
+              Est.  stn bbox = 4.687e+03 (3.60e+03 1.09e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 395.1M
+Iteration  2: Total net bbox = 4.687e+03 (3.60e+03 1.09e+03)
+              Est.  stn bbox = 4.687e+03 (3.60e+03 1.09e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 395.1M
+Iteration  3: Total net bbox = 2.148e+04 (1.14e+04 1.01e+04)
+              Est.  stn bbox = 2.148e+04 (1.14e+04 1.01e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 395.3M
+Iteration  4: Total net bbox = 2.704e+04 (1.42e+04 1.28e+04)
+              Est.  stn bbox = 2.704e+04 (1.42e+04 1.28e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 395.3M
+Iteration  5: Total net bbox = 3.224e+04 (1.81e+04 1.42e+04)
+              Est.  stn bbox = 3.224e+04 (1.81e+04 1.42e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 395.3M
+Iteration  6: Total net bbox = 3.408e+04 (1.85e+04 1.56e+04)
+              Est.  stn bbox = 3.408e+04 (1.85e+04 1.56e+04)
+              cpu = 0:00:00.0 real = 0:00:01.0 mem = 395.3M
+Iteration  7: Total net bbox = 3.609e+04 (2.05e+04 1.56e+04)
+              Est.  stn bbox = 4.622e+04 (2.62e+04 2.01e+04)
+              cpu = 0:00:00.0 real = 0:00:01.0 mem = 395.2M
+Iteration  8: Total net bbox = 3.911e+04 (2.34e+04 1.57e+04)
+              Est.  stn bbox = 4.935e+04 (2.92e+04 2.01e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 395.2M
+Iteration  9: Total net bbox = 3.935e+04 (2.12e+04 1.81e+04)
+              Est.  stn bbox = 3.935e+04 (2.12e+04 1.81e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 396.0M
+Iteration 10: Total net bbox = 4.315e+04 (2.50e+04 1.81e+04)
+              Est.  stn bbox = 5.373e+04 (3.10e+04 2.28e+04)
+              cpu = 0:00:00.0 real = 0:00:01.0 mem = 396.0M
+Iteration 11: Total net bbox = 4.608e+04 (2.77e+04 1.84e+04)
+              Est.  stn bbox = 5.691e+04 (3.39e+04 2.30e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 396.0M
+*** cost = 4.608e+04 (2.77e+04 1.84e+04) (cpu for global=0:00:00.0) real=0:00:02.0***
+Core Placement runtime cpu: 0:00:00.0 real: 0:00:02.0
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (EMS-27):	Message (SOCCTE-286) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (EMS-27):	Message (SOCCTE-289) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+Starting refinePlace ...
+Placement tweakage begins.
+wire length = 4.635e+04 = 2.788e+04 H + 1.847e+04 V
+wire length = 4.077e+04 = 2.246e+04 H + 1.831e+04 V
+Placement tweakage ends.
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        31.57 um
+  inst (U0_ALU/mult_49/FS_1/U14) with max move: (150.06, 116.03) -> (181.63, 116.03)
+  mean    (X+Y) =         5.04 um
+Total instances flipped : 17
+Total instances moved : 922
+*** cpu=0:00:00.0   mem=395.4M  mem(used)=0.0M***
+Total net length = 4.084e+04 (2.247e+04 1.838e+04) (ext = 2.734e+03)
+*** End of Placement (cpu=0:00:16.6, real=0:00:07.0, mem=395.4M) ***
+
+default core: bins with density >  0.75 = 31.5 % ( 17 / 54 )
+*** Free Virtual Timing Model ...(mem=395.4M)
+Starting IO pin assignment...
+**WARN: (SOCSP-9025):	No scan chain specified/traced.
+setAnalysisMode  -domain allClockDomain -checkType setup -skew true -usefulSkew false -log true -warn true -caseAnalysis true -sequentialConstProp false -moduleIOCstr true -clockPropagation forcedIdeal -clkSrcPath false -timingSelfLoopsNoSkew false -asyncChecks async -useOutputPinCap true -latch true -latchDelayCalIteration 2 -timeBorrowing true -latchFullDelayCal false -clockGatingCheck true -enableMultipleDriveNet true -analysisType bcWc -cppr false -clkNetsMarking beforeConstProp -honorVirtualPartition false -honorClockDomains true
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 395.4M **
+Added -handlePreroute to trialRouteMode
+*** optDesign -preCTS ***
+DRC Margin: user margin 0.0; extra margin 0.2
+Setup Target Slack: user slack 0.0; extra slack 0.1
+Hold Target Slack: user slack 0.0
+*info: Setting setup target slack to 0.100
+*info: Hold target slack is 0.000
+*** CTE mode ***
+*** Starting trialRoute (mem=395.4M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -handlePreroute -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+routingBox: (0 0) (480940 320940)
+coreBox:    (8200 8200) (472940 312940)
+Number of multi-gpin terms=166, multi-gpins=336, moved blk term=0/54
+
+Phase 1a route (0:00:00.0 395.4M):
+Est net length = 5.317e+04um = 2.786e+04H + 2.531e+04V
+Usage: (14.9%H 16.2%V) = (3.357e+04um 4.364e+04um) = (16297 15204)
+Obstruct: 51 = 0 (0.0%H) + 51 (0.8%V)
+Overflow: 15 = 0 (0.00% H) + 15 (0.23% V)
+Number obstruct path=9 reroute=0
+
+Phase 1b route (0:00:00.0 395.4M):
+Usage: (14.9%H 16.2%V) = (3.353e+04um 4.364e+04um) = (16277 15205)
+Overflow: 14 = 0 (0.00% H) + 14 (0.21% V)
+
+Phase 1c route (0:00:00.0 395.4M):
+Usage: (14.8%H 16.2%V) = (3.338e+04um 4.356e+04um) = (16206 15179)
+Overflow: 8 = 0 (0.00% H) + 8 (0.12% V)
+
+Phase 1d route (0:00:00.0 395.4M):
+Usage: (14.8%H 16.2%V) = (3.338e+04um 4.356e+04um) = (16207 15179)
+Overflow: 6 = 0 (0.00% H) + 6 (0.10% V)
+
+Phase 1e route (0:00:00.0 395.4M):
+Usage: (14.8%H 16.2%V) = (3.339e+04um 4.357e+04um) = (16209 15180)
+Overflow: 4 = 0 (0.00% H) + 4 (0.06% V)
+
+Phase 1f route (0:00:00.0 395.4M):
+Usage: (14.8%H 16.2%V) = (3.339e+04um 4.357e+04um) = (16213 15182)
+Overflow: 2 = 0 (0.00% H) + 2 (0.03% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	2	 0.03%
+--------------------------------------
+  0:	0	 0.00%	42	 0.65%
+  1:	0	 0.00%	45	 0.69%
+  2:	0	 0.00%	83	 1.28%
+  3:	0	 0.00%	47	 0.72%
+  4:	0	 0.00%	26	 0.40%
+  5:	9	 0.14%	35	 0.54%
+  6:	2	 0.03%	103	 1.58%
+  7:	229	 3.49%	37	 0.57%
+  8:	23	 0.35%	99	 1.52%
+  9:	142	 2.17%	171	 2.63%
+ 10:	186	 2.84%	425	 6.53%
+ 11:	201	 3.07%	712	10.95%
+ 12:	431	 6.58%	1199	18.43%
+ 13:	795	12.13%	1299	19.97%
+ 14:	1135	17.32%	1177	18.10%
+ 15:	1217	18.57%	963	14.81%
+ 16:	1147	17.50%	17	 0.26%
+ 17:	767	11.70%	9	 0.14%
+ 18:	271	 4.13%	9	 0.14%
+ 20:	0	 0.00%	4	 0.06%
+
+
+
+*** Memory Usage v0.144 (Current mem = 395.379M, initial mem = 62.238M) ***
+Phase 1l route (0:00:00.0 395.4M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (15.1%H 16.4%V) = (3.408e+04um 4.432e+04um) = (16538 15441)
+Overflow: 22 = 0 (0.00% H) + 22 (0.34% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -3:	0	 0.00%	1	 0.02%
+ -2:	0	 0.00%	5	 0.08%
+ -1:	0	 0.00%	13	 0.20%
+--------------------------------------
+  0:	0	 0.00%	35	 0.54%
+  1:	0	 0.00%	47	 0.72%
+  2:	0	 0.00%	75	 1.15%
+  3:	0	 0.00%	51	 0.78%
+  4:	2	 0.03%	29	 0.45%
+  5:	8	 0.12%	43	 0.66%
+  6:	4	 0.06%	106	 1.63%
+  7:	231	 3.52%	35	 0.54%
+  8:	19	 0.29%	86	 1.32%
+  9:	150	 2.29%	176	 2.71%
+ 10:	201	 3.07%	416	 6.40%
+ 11:	208	 3.17%	727	11.18%
+ 12:	448	 6.83%	1205	18.53%
+ 13:	798	12.17%	1285	19.76%
+ 14:	1145	17.47%	1168	17.96%
+ 15:	1199	18.29%	962	14.79%
+ 16:	1139	17.38%	17	 0.26%
+ 17:	743	11.33%	9	 0.14%
+ 18:	260	 3.97%	9	 0.14%
+ 20:	0	 0.00%	4	 0.06%
+
+
+
+*** Completed Phase 1 route (0:00:00.0 395.4M) ***
+
+
+Total length: 5.489e+04um, number of vias: 15410
+M1(H) length: 2.428e+00um, number of vias: 7620
+M2(V) length: 2.216e+04um, number of vias: 6924
+M3(H) length: 2.494e+04um, number of vias: 731
+M4(V) length: 5.151e+03um, number of vias: 118
+M5(H) length: 2.503e+03um, number of vias: 17
+M6(V) length: 1.378e+02um, number of vias: 0
+M7(H) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.0 395.4M) ***
+
+*** Finished all Phases (cpu=0:00:00.0 mem=395.4M) ***
+Peak Memory Usage was 395.4M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=395.4M) ***
+
+Default RC Extraction called for design SYS_TOP.
+RC Extraction called in multi-corner(1) mode.
+RCMode: Default
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using detail cap. scale factor for clock nets.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 395.379M)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 395.4M)
+Number of Loop : 0
+Start delay calculation (mem=395.379M)...
+Delay calculation completed.
+(0:00:00.0 395.379M 0)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 395.4M)
+Number of Loop : 0
+Start delay calculation (mem=395.379M)...
+Delay calculation completed.
+(0:00:00.0 395.379M 0)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 395.4M)
+Number of Loop : 0
+Start delay calculation (mem=395.379M)...
+Delay calculation completed.
+(0:00:00.0 395.379M 0)
+*** CDM Built up (cpu=0:00:00.0  mem= 395.4M) ***
+*info: Start fixing DRV (Mem = 395.38M) ...
+*info: Options = -maxCap -maxTran -noMaxFanout -sensitivity -backward -reduceBuffer -maxIter 1
+*info: Start fixing DRV iteration 1 ...
+*** Starting dpFixDRCViolation (395.4M)
+*info: 12 clock nets excluded
+*info: 2 special nets excluded.
+*info: 66 no-driver nets excluded.
+*** Starting multi-driver net buffering ***
+*summary: 0 non-ignored multi-driver nets.
+*** Finished buffering multi-driver nets (CPU=0:00:00.0, MEM=395.4M) ***
+*info: There are 80 candidate Buffer cells
+*info: There are 80 candidate Inverter cells
+Initializing placement sections/sites ...
+Density before buffering = 0.718881
+Start fixing design rules ... (0:00:00.0 395.4M)
+Done fixing design rule (0:00:00.0 395.4M)
+
+Summary:
+16 buffers added on 7 nets (with 11 drivers resized)
+
+Density after buffering = 0.721781
+*** Completed dpFixDRCViolation (0:00:00.0 395.4M)
+
+*** Starting trialRoute (mem=395.4M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -handlePreroute -keepMarkedOptRoutes -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+routingBox: (0 0) (480940 320940)
+coreBox:    (8200 8200) (472940 312940)
+Number of multi-gpin terms=168, multi-gpins=339, moved blk term=0/54
+
+Phase 1a route (0:00:00.0 395.4M):
+Est net length = 5.391e+04um = 2.835e+04H + 2.557e+04V
+Usage: (15.1%H 16.3%V) = (3.407e+04um 4.401e+04um) = (16542 15336)
+Obstruct: 51 = 0 (0.0%H) + 51 (0.8%V)
+Overflow: 15 = 0 (0.00% H) + 15 (0.23% V)
+Number obstruct path=9 reroute=0
+
+Phase 1b route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.403e+04um 4.402e+04um) = (16520 15337)
+Overflow: 14 = 0 (0.00% H) + 14 (0.21% V)
+
+Phase 1c route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.394e+04um 4.397e+04um) = (16477 15321)
+Overflow: 8 = 0 (0.00% H) + 8 (0.12% V)
+
+Phase 1d route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.394e+04um 4.397e+04um) = (16478 15321)
+Overflow: 6 = 0 (0.00% H) + 6 (0.10% V)
+
+Phase 1e route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.394e+04um 4.397e+04um) = (16480 15322)
+Overflow: 4 = 0 (0.00% H) + 4 (0.06% V)
+
+Phase 1f route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.395e+04um 4.398e+04um) = (16484 15324)
+Overflow: 2 = 0 (0.00% H) + 2 (0.03% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	2	 0.03%
+--------------------------------------
+  0:	0	 0.00%	40	 0.62%
+  1:	0	 0.00%	47	 0.72%
+  2:	0	 0.00%	82	 1.26%
+  3:	0	 0.00%	48	 0.74%
+  4:	0	 0.00%	28	 0.43%
+  5:	9	 0.14%	35	 0.54%
+  6:	2	 0.03%	99	 1.52%
+  7:	229	 3.49%	39	 0.60%
+  8:	27	 0.41%	96	 1.48%
+  9:	147	 2.24%	192	 2.95%
+ 10:	208	 3.17%	444	 6.83%
+ 11:	203	 3.10%	721	11.09%
+ 12:	447	 6.82%	1171	18.00%
+ 13:	802	12.23%	1323	20.34%
+ 14:	1135	17.32%	1130	17.37%
+ 15:	1171	17.86%	961	14.78%
+ 16:	1143	17.44%	22	 0.34%
+ 17:	778	11.87%	8	 0.12%
+ 18:	254	 3.87%	12	 0.18%
+ 20:	0	 0.00%	4	 0.06%
+
+
+Using detail cap. scale factor for clock nets.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+
+*** Memory Usage v0.144 (Current mem = 395.379M, initial mem = 62.238M) ***
+Phase 1l route (0:00:00.0 395.4M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (15.4%H 16.6%V) = (3.467e+04um 4.475e+04um) = (16827 15592)
+Overflow: 22 = 0 (0.00% H) + 22 (0.34% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -3:	0	 0.00%	1	 0.02%
+ -2:	0	 0.00%	6	 0.09%
+ -1:	0	 0.00%	12	 0.18%
+--------------------------------------
+  0:	0	 0.00%	34	 0.52%
+  1:	0	 0.00%	46	 0.71%
+  2:	0	 0.00%	75	 1.15%
+  3:	0	 0.00%	51	 0.78%
+  4:	2	 0.03%	33	 0.51%
+  5:	8	 0.12%	40	 0.62%
+  6:	4	 0.06%	107	 1.65%
+  7:	231	 3.52%	37	 0.57%
+  8:	24	 0.37%	84	 1.29%
+  9:	158	 2.41%	200	 3.08%
+ 10:	221	 3.37%	423	 6.50%
+ 11:	212	 3.23%	743	11.42%
+ 12:	463	 7.06%	1181	18.16%
+ 13:	806	12.30%	1307	20.10%
+ 14:	1138	17.36%	1117	17.17%
+ 15:	1157	17.65%	961	14.78%
+ 16:	1136	17.33%	22	 0.34%
+ 17:	752	11.47%	8	 0.12%
+ 18:	243	 3.71%	12	 0.18%
+ 20:	0	 0.00%	4	 0.06%
+
+
+
+*** Completed Phase 1 route (0:00:00.0 395.4M) ***
+
+
+Total length: 5.565e+04um, number of vias: 15520
+M1(H) length: 2.428e+00um, number of vias: 7650
+M2(V) length: 2.207e+04um, number of vias: 6965
+M3(H) length: 2.521e+04um, number of vias: 754
+M4(V) length: 5.495e+03um, number of vias: 134
+M5(H) length: 2.721e+03um, number of vias: 17
+M6(V) length: 1.525e+02um, number of vias: 0
+M7(H) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.0 395.4M) ***
+
+*** Finished all Phases (cpu=0:00:00.0 mem=395.4M) ***
+Peak Memory Usage was 395.4M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=395.4M) ***
+
+Default RC Extraction called for design SYS_TOP.
+RC Extraction called in multi-corner(1) mode.
+RCMode: Default
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using detail cap. scale factor for clock nets.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 395.379M)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 395.4M)
+Number of Loop : 0
+Start delay calculation (mem=395.379M)...
+Delay calculation completed.
+(0:00:00.0 395.379M 0)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 395.4M)
+Number of Loop : 0
+Start delay calculation (mem=395.379M)...
+Delay calculation completed.
+(0:00:00.0 395.379M 0)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 395.4M)
+Number of Loop : 0
+Start delay calculation (mem=395.379M)...
+Delay calculation completed.
+(0:00:00.0 395.379M 0)
+*** CDM Built up (cpu=0:00:00.0  mem= 395.4M) ***
+*info: DRV Fixing Iteration 1.
+*info: Remaining violations:
+*info:   Max cap violations:    0
+*info:   Max tran violations:   0
+*info:   Prev Max cap violations:    3
+*info:   Prev Max tran violations:   426
+*info:
+*info: Completed fixing DRV (CPU Time = 0:00:00, Mem = 395.38M).
+**optDesign ... cpu = 0:00:00, real = 0:00:03, mem = 395.4M **
+*** Starting optFanout (395.4M)
+*info: 12 clock nets excluded
+*info: 2 special nets excluded.
+*info: 66 no-driver nets excluded.
+*** Starting multi-driver net buffering ***
+*summary: 0 non-ignored multi-driver nets.
+*** Finished buffering multi-driver nets (CPU=0:00:00.0, MEM=395.4M) ***
+Start fixing timing ... (0:00:00.0 395.4M)
+
+Start clock batches slack = -7.224ns
+End batches slack = -6.200ns
+*info: Buffered 0 large fanout net (> 100 terms)
+Done fixing timing (0:00:00.0 395.4M)
+
+Summary:
+8 buffers added on 8 nets (with 7 drivers resized)
+
+Density after buffering = 0.726115
+*** Completed optFanout (0:00:00.0 395.4M)
+
+*** Starting trialRoute (mem=395.4M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -handlePreroute -keepMarkedOptRoutes -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+routingBox: (0 0) (480940 320940)
+coreBox:    (8200 8200) (472940 312940)
+Number of multi-gpin terms=183, multi-gpins=371, moved blk term=0/54
+
+Phase 1a route (0:00:00.0 395.4M):
+Est net length = 5.389e+04um = 2.833e+04H + 2.556e+04V
+Usage: (15.1%H 16.3%V) = (3.406e+04um 4.404e+04um) = (16535 15345)
+Obstruct: 51 = 0 (0.0%H) + 51 (0.8%V)
+Overflow: 15 = 0 (0.00% H) + 15 (0.23% V)
+Number obstruct path=9 reroute=0
+
+Phase 1b route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.401e+04um 4.404e+04um) = (16513 15346)
+Overflow: 14 = 0 (0.00% H) + 14 (0.21% V)
+
+Phase 1c route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.392e+04um 4.400e+04um) = (16470 15330)
+Overflow: 8 = 0 (0.00% H) + 8 (0.12% V)
+
+Phase 1d route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.392e+04um 4.400e+04um) = (16471 15330)
+Overflow: 6 = 0 (0.00% H) + 6 (0.10% V)
+
+Phase 1e route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.393e+04um 4.400e+04um) = (16473 15331)
+Overflow: 4 = 0 (0.00% H) + 4 (0.06% V)
+
+Phase 1f route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.394e+04um 4.401e+04um) = (16477 15333)
+Overflow: 2 = 0 (0.00% H) + 2 (0.03% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	2	 0.03%
+--------------------------------------
+  0:	0	 0.00%	41	 0.63%
+  1:	0	 0.00%	46	 0.71%
+  2:	0	 0.00%	82	 1.26%
+  3:	0	 0.00%	48	 0.74%
+  4:	0	 0.00%	28	 0.43%
+  5:	9	 0.14%	35	 0.54%
+  6:	2	 0.03%	99	 1.52%
+  7:	229	 3.49%	39	 0.60%
+  8:	28	 0.43%	96	 1.48%
+  9:	150	 2.29%	190	 2.92%
+ 10:	204	 3.11%	449	 6.90%
+ 11:	201	 3.07%	727	11.18%
+ 12:	442	 6.74%	1159	17.82%
+ 13:	799	12.19%	1327	20.40%
+ 14:	1141	17.41%	1129	17.36%
+ 15:	1180	18.00%	961	14.78%
+ 16:	1145	17.47%	22	 0.34%
+ 17:	770	11.75%	8	 0.12%
+ 18:	255	 3.89%	12	 0.18%
+ 20:	0	 0.00%	4	 0.06%
+
+
+Using detail cap. scale factor for clock nets.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+
+*** Memory Usage v0.144 (Current mem = 395.379M, initial mem = 62.238M) ***
+Phase 1l route (0:00:00.0 395.4M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (15.4%H 16.6%V) = (3.466e+04um 4.476e+04um) = (16822 15597)
+Overflow: 22 = 0 (0.00% H) + 22 (0.34% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -3:	0	 0.00%	1	 0.02%
+ -2:	0	 0.00%	6	 0.09%
+ -1:	0	 0.00%	12	 0.18%
+--------------------------------------
+  0:	0	 0.00%	35	 0.54%
+  1:	0	 0.00%	45	 0.69%
+  2:	0	 0.00%	76	 1.17%
+  3:	0	 0.00%	51	 0.78%
+  4:	2	 0.03%	33	 0.51%
+  5:	8	 0.12%	39	 0.60%
+  6:	5	 0.08%	107	 1.65%
+  7:	231	 3.52%	37	 0.57%
+  8:	24	 0.37%	82	 1.26%
+  9:	160	 2.44%	203	 3.12%
+ 10:	219	 3.34%	423	 6.50%
+ 11:	211	 3.22%	747	11.49%
+ 12:	457	 6.97%	1172	18.02%
+ 13:	803	12.25%	1311	20.16%
+ 14:	1139	17.38%	1117	17.17%
+ 15:	1169	17.83%	961	14.78%
+ 16:	1140	17.39%	22	 0.34%
+ 17:	743	11.33%	8	 0.12%
+ 18:	244	 3.72%	12	 0.18%
+ 20:	0	 0.00%	4	 0.06%
+
+
+
+*** Completed Phase 1 route (0:00:00.0 395.4M) ***
+
+
+Total length: 5.562e+04um, number of vias: 15539
+M1(H) length: 2.428e+00um, number of vias: 7666
+M2(V) length: 2.210e+04um, number of vias: 6967
+M3(H) length: 2.515e+04um, number of vias: 752
+M4(V) length: 5.466e+03um, number of vias: 137
+M5(H) length: 2.757e+03um, number of vias: 17
+M6(V) length: 1.435e+02um, number of vias: 0
+M7(H) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.0 395.4M) ***
+
+*** Finished all Phases (cpu=0:00:00.0 mem=395.4M) ***
+Peak Memory Usage was 395.4M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=395.4M) ***
+
+Default RC Extraction called for design SYS_TOP.
+RC Extraction called in multi-corner(1) mode.
+RCMode: Default
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using detail cap. scale factor for clock nets.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 395.379M)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 395.4M)
+Number of Loop : 0
+Start delay calculation (mem=395.379M)...
+Delay calculation completed.
+(0:00:00.0 395.379M 0)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 395.4M)
+Number of Loop : 0
+Start delay calculation (mem=395.379M)...
+Delay calculation completed.
+(0:00:00.0 395.379M 0)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 395.4M)
+Number of Loop : 0
+Start delay calculation (mem=395.379M)...
+Delay calculation completed.
+(0:00:00.0 395.379M 0)
+*** CDM Built up (cpu=0:00:00.0  mem= 395.4M) ***
+**optDesign ... cpu = 0:00:00, real = 0:00:04, mem = 395.4M **
+*** Timing NOT met, worst failing slack is -6.699
+*** Check timing (0:00:00.0)
+************ Recovering area ***************
+Info: 12 clock nets excluded from IPO operation.
+*** Starting Area Reclaim ***
+** Density before area reclaim = 72.612% **
+
+*** starting 1-st reclaim pass: 1406 instances 
+*** starting 2-nd reclaim pass: 226 instances 
+*** starting 3-rd reclaim pass: 66 instances 
+
+
+** Area Reclaim Summary: Buffer Deletion = 0 Declone = 11 Downsize = 40 **
+** Density Change = 0.153% **
+** Density after area reclaim = 72.458% **
+*** Finished Area Reclaim (0:00:00.0) ***
+*** Starting sequential cell resizing ***
+density before resizing = 72.458%
+
+*summary:     16 instances changed cell type
+density after resizing = 72.728%
+*** Finish sequential cell resizing (cpu=0:00:00.0 mem=395.4M) ***
+density before resizing = 72.728%
+* summary of transition time violation fixes:
+*summary:      2 instances changed cell type
+density after resizing = 72.745%
+*** Starting trialRoute (mem=395.4M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -handlePreroute -keepMarkedOptRoutes -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+routingBox: (0 0) (480940 320940)
+coreBox:    (8200 8200) (472940 312940)
+Number of multi-gpin terms=178, multi-gpins=362, moved blk term=0/54
+
+Phase 1a route (0:00:00.0 395.4M):
+Est net length = 5.405e+04um = 2.842e+04H + 2.563e+04V
+Usage: (15.2%H 16.3%V) = (3.415e+04um 4.407e+04um) = (16578 15356)
+Obstruct: 51 = 0 (0.0%H) + 51 (0.8%V)
+Overflow: 15 = 0 (0.00% H) + 15 (0.23% V)
+Number obstruct path=9 reroute=0
+
+Phase 1b route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.411e+04um 4.407e+04um) = (16558 15357)
+Overflow: 14 = 0 (0.00% H) + 14 (0.21% V)
+
+Phase 1c route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.402e+04um 4.403e+04um) = (16515 15343)
+Overflow: 7 = 0 (0.00% H) + 7 (0.11% V)
+
+Phase 1d route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.402e+04um 4.403e+04um) = (16516 15343)
+Overflow: 6 = 0 (0.00% H) + 6 (0.10% V)
+
+Phase 1e route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.402e+04um 4.404e+04um) = (16518 15344)
+Overflow: 5 = 0 (0.00% H) + 5 (0.08% V)
+
+Phase 1f route (0:00:00.0 395.4M):
+Usage: (15.1%H 16.3%V) = (3.403e+04um 4.404e+04um) = (16522 15346)
+Overflow: 3 = 0 (0.00% H) + 3 (0.05% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	3	 0.05%
+--------------------------------------
+  0:	0	 0.00%	39	 0.60%
+  1:	0	 0.00%	44	 0.68%
+  2:	0	 0.00%	87	 1.34%
+  3:	0	 0.00%	46	 0.71%
+  4:	0	 0.00%	26	 0.40%
+  5:	6	 0.09%	40	 0.62%
+  6:	4	 0.06%	96	 1.48%
+  7:	230	 3.51%	37	 0.57%
+  8:	28	 0.43%	99	 1.52%
+  9:	149	 2.27%	194	 2.98%
+ 10:	208	 3.17%	440	 6.77%
+ 11:	197	 3.01%	747	11.49%
+ 12:	440	 6.71%	1143	17.57%
+ 13:	820	12.51%	1323	20.34%
+ 14:	1134	17.30%	1131	17.39%
+ 15:	1167	17.80%	964	14.82%
+ 16:	1154	17.60%	22	 0.34%
+ 17:	780	11.90%	7	 0.11%
+ 18:	238	 3.63%	12	 0.18%
+ 20:	0	 0.00%	4	 0.06%
+
+
+Using detail cap. scale factor for clock nets.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+
+*** Memory Usage v0.144 (Current mem = 395.379M, initial mem = 62.238M) ***
+Phase 1l route (0:00:00.0 395.4M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (15.4%H 16.6%V) = (3.475e+04um 4.480e+04um) = (16863 15611)
+Overflow: 23 = 0 (0.00% H) + 23 (0.36% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -3:	0	 0.00%	1	 0.02%
+ -2:	0	 0.00%	6	 0.09%
+ -1:	0	 0.00%	13	 0.20%
+--------------------------------------
+  0:	0	 0.00%	32	 0.49%
+  1:	0	 0.00%	43	 0.66%
+  2:	0	 0.00%	83	 1.28%
+  3:	0	 0.00%	47	 0.72%
+  4:	0	 0.00%	33	 0.51%
+  5:	8	 0.12%	42	 0.65%
+  6:	5	 0.08%	104	 1.60%
+  7:	232	 3.54%	39	 0.60%
+  8:	25	 0.38%	80	 1.23%
+  9:	158	 2.41%	206	 3.17%
+ 10:	219	 3.34%	425	 6.53%
+ 11:	214	 3.26%	761	11.70%
+ 12:	458	 6.99%	1152	17.71%
+ 13:	818	12.48%	1307	20.10%
+ 14:	1135	17.32%	1121	17.24%
+ 15:	1157	17.65%	964	14.82%
+ 16:	1143	17.44%	22	 0.34%
+ 17:	753	11.49%	7	 0.11%
+ 18:	230	 3.51%	12	 0.18%
+ 20:	0	 0.00%	4	 0.06%
+
+
+
+*** Completed Phase 1 route (0:00:00.0 395.4M) ***
+
+
+Total length: 5.580e+04um, number of vias: 15512
+M1(H) length: 8.168e+00um, number of vias: 7644
+M2(V) length: 2.201e+04um, number of vias: 6970
+M3(H) length: 2.536e+04um, number of vias: 758
+M4(V) length: 5.628e+03um, number of vias: 126
+M5(H) length: 2.658e+03um, number of vias: 14
+M6(V) length: 1.312e+02um, number of vias: 0
+M7(H) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.0 395.4M) ***
+
+*** Finished all Phases (cpu=0:00:00.0 mem=395.4M) ***
+Peak Memory Usage was 395.4M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=395.4M) ***
+
+Default RC Extraction called for design SYS_TOP.
+RC Extraction called in multi-corner(1) mode.
+RCMode: Default
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using detail cap. scale factor for clock nets.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 395.379M)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 395.4M)
+Number of Loop : 0
+Start delay calculation (mem=395.379M)...
+Delay calculation completed.
+(0:00:00.0 395.379M 0)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 395.4M)
+Number of Loop : 0
+Start delay calculation (mem=395.379M)...
+Delay calculation completed.
+(0:00:00.0 395.379M 0)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 395.4M)
+Number of Loop : 0
+Start delay calculation (mem=395.379M)...
+Delay calculation completed.
+(0:00:00.0 395.379M 0)
+*** CDM Built up (cpu=0:00:00.0  mem= 395.4M) ***
+**optDesign ... cpu = 0:00:00, real = 0:00:06, mem = 395.4M **
+*** Timing NOT met, worst failing slack is -5.472
+*** Check timing (0:00:00.0)
+*** Starting optCritPath ***
+*info: 12 clock nets excluded
+*info: 2 special nets excluded.
+*info: 66 no-driver nets excluded.
+
+Density : 0.7274
+Max route overflow : 0.0036
+Current slack : -5.472 ns, density : 0.7274
+Current slack : -4.642 ns, density : 0.7284
+Current slack : -4.642 ns, density : 0.7284
+Current slack : -4.642 ns, density : 0.7282
+Current slack : -4.542 ns, density : 0.7282
+Current slack : -3.584 ns, density : 0.7358
+Current slack : -3.584 ns, density : 0.7358
+Current slack : -3.584 ns, density : 0.7358
+Current slack : -3.584 ns, density : 0.7358
+Current slack : -3.576 ns, density : 0.7358
+Current slack : -3.576 ns, density : 0.7358
+Current slack : -3.576 ns, density : 0.7358
+*** Starting delays update (0:00:58.7 mem=395.4M) ***
+*** Finished delays update (0:00:59.0 mem=395.4M) ***
+
+*** Starting delays update (0:00:59.1 mem=395.4M) ***
+*** Finished delays update (0:00:59.5 mem=395.4M) ***
+
+*** Done optCritPath (0:00:59.6 395.38M) ***
+**optDesign ... cpu = 0:01:00, real = 0:01:10, mem = 395.4M **
+**optDesign ... cpu = 0:01:00, real = 0:01:10, mem = 395.4M **
+*** Finished optDesign ***
+*** Starting "NanoPlace(TM) placement v0.845 (mem=395.4M)" ...
+*** Build Buffered Sizing Timing Model (Used Compact Buffer Set) ...(cpu=0:00:03.3 mem=395.4M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:03.9 mem=397.1M) ***
+Options: timingDriven ignoreSpare pinGuide gpeffort=medium 
+#std cell=2200 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=2294 #term=8854 #term/net=3.86, #fixedIo=0, #floatIo=0, #fixedPin=19, #floatPin=0
+stdCell: 2200 single + 0 double + 0 multi
+Total standard cell length = 9.8445 (mm), area = 0.0283 (mm^2)
+
+
+Average module density = 0.802.
+Density for module 'U0_UART' = 0.727.
+       = stdcell_area 3391 (3990 um^2) / alloc_area 4662 (5486 um^2).
+Density for the rest of the design = 0.814.
+       = stdcell_area 20620 (24264 um^2) / alloc_area 25336 (29813 um^2).
+Pin Density = 0.369.
+            = total # of pins 8854 / total Instance area 24011.
+
+
+
+
+Identified 5 spare or floating instances, with no clusters.
+
+Iteration 11: Total net bbox = 4.573e+04 (2.62e+04 1.96e+04)
+              Est.  stn bbox = 5.720e+04 (3.23e+04 2.49e+04)
+              cpu = 0:00:01.8 real = 0:00:02.0 mem = 400.7M
+Iteration 12: Total net bbox = 4.898e+04 (2.92e+04 1.98e+04)
+              Est.  stn bbox = 6.054e+04 (3.55e+04 2.51e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 400.7M
+*** cost = 4.898e+04 (2.92e+04 1.98e+04) (cpu for global=0:00:01.8) real=0:00:02.0***
+Core Placement runtime cpu: 0:00:01.8 real: 0:00:02.0
+
+Starting refinePlace ...
+Placement tweakage begins.
+wire length = 4.989e+04 = 2.990e+04 H + 1.999e+04 V
+wire length = 4.316e+04 = 2.345e+04 H + 1.971e+04 V
+Placement tweakage ends.
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        36.49 um
+  inst (U0_CLKDIV_MUX/U7) with max move: (190.65, 55.76) -> (224.27, 52.89)
+  mean    (X+Y) =         4.76 um
+Total instances flipped : 47
+Total instances moved : 1537
+*** cpu=0:00:00.1   mem=399.7M  mem(used)=0.0M***
+Total net length = 4.331e+04 (2.344e+04 1.987e+04) (ext = 2.515e+03)
+*** End of Placement (cpu=0:00:06.7, real=0:00:07.0, mem=399.7M) ***
+
+default core: bins with density >  0.75 =   63 % ( 34 / 54 )
+*** Free Virtual Timing Model ...(mem=399.7M)
+Starting IO pin assignment...
+**WARN: (SOCSP-9025):	No scan chain specified/traced.
+*** Finishing placeDesign concurrent flow ***
+**placeDesign ... cpu = 0: 1:23, real = 0: 1:25, mem = 399.7M **
+<CMD> addTieHiLo -cell TIELOM -prefix LTIE
+No constraint set for distance
+No constraint set for fanout
+Existing tie instances of cell TIELOM, if found would be deleted
+Deleted 0 physical inst  (cell TIELOM / prefix -).
+Deleted 0 logical insts of cell TIELOM with prefix LTIE
+
+INFO: Total Number of Tie Cells (TIELOM) placed: 3
+<CMD> addTieHiLo -cell TIEHIM -prefix HTIE
+No constraint set for distance
+No constraint set for fanout
+Existing tie instances of cell TIEHIM, if found would be deleted
+Deleted 0 physical inst  (cell TIEHIM / prefix -).
+Deleted 0 logical insts of cell TIEHIM with prefix HTIE
+
+INFO: Total Number of Tie Cells (TIEHIM) placed: 6
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst *
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst *

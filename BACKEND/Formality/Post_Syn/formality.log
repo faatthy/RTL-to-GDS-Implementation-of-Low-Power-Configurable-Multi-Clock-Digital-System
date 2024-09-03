@@ -1,0 +1,28 @@
+Info:  Net Imp:/WORK/ALU_DW01_sub_0/CO is undriven.
+Info:  Net Imp:/WORK/ALU_DW01_add_0/CO is undriven.
+Info:  Net Imp:/WORK/ALU_DW01_add_1/CO is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_1/remainder[7] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_1/remainder[6] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_1/remainder[5] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_1/remainder[4] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_1/remainder[3] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_1/remainder[2] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_1/remainder[1] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_1/remainder[0] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_1/divide_by_0 is undriven.
+Info:  guide_transformation 60 (Line: 434)  Rejected transformation 60 because design 'uart_rx_fsm' cannot be found.
+Info:  guide_transformation 60 (Line: 434) Retrying with unread processing enabled.
+Info:  guide_transformation 60 (Line: 434)  Rejected transformation 60 because design 'uart_rx_fsm' cannot be found.
+Info:  SVF Operation 60 (Line: 434) - transformation_share.  Status: rejected
+
+Info:  guide_transformation 61 (Line: 453)  Rejected transformation 61 because design 'uart_rx_fsm' cannot be found.
+Info:  guide_transformation 61 (Line: 453) Retrying with unread processing enabled.
+Info:  guide_transformation 61 (Line: 453)  Rejected transformation 61 because design 'uart_rx_fsm' cannot be found.
+Info:  SVF Operation 61 (Line: 453) - transformation_share.  Status: rejected
+
+Info:  guide_uniquify 73 (Line: 586)  Cannot find object "U1_ClkDiv/U11" in design 'SYS_TOP'.
+Info:  SVF Operation 73 (Line: 586) - uniquify.  Status: rejected
+Info:  guide_uniquify 73 (Line: 586)  Cannot find object "U0_ClkDiv/U11" in design 'SYS_TOP'.
+Info:  guide_uniquify 81 (Line: 627)  Cannot find object "U0_ALU/dp_cluster_0/mult_49" in design 'SYS_TOP'.
+Info:  Pre-verification of Ref:/WORK/ALU/div_52 SUCCEEDED.
+Info:  Pre-verification of Ref:/WORK/ALU/mult_49 SUCCEEDED.

@@ -1,0 +1,612 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\STM internship
+vALU
+Z1 !s100 ;fb5X7Hmh0k:kE4gAm_3c3
+Z2 IWS^kQ8;@V01[36PT^5S[93
+Z3 VgFjiNJE:Sa6Y:k?EgQcd>0
+Z4 dD:\Digital Eltemsah\Low Power Configurable Multi Clock Digital System\RTL
+Z5 w1723608631
+Z6 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ALU/ALU.v
+Z7 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ALU/ALU.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ALU/ALU.v|
+Z10 o-work work -O0
+Z11 n@a@l@u
+Z12 !s108 1723784527.225000
+Z13 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ALU/ALU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vAsync_fifo
+Z14 !s100 DOf;d@zLKOa3YFBG`X;022
+Z15 I_?NGhjeQCHd;k;N7KNenX0
+Z16 VK^>]fH^FR@<``zE2<Y2<<0
+R4
+Z17 w1723614033
+Z18 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/Async_fifo.v
+Z19 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/Async_fifo.v
+L0 2
+R8
+r1
+31
+Z20 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/Async_fifo.v|
+R10
+Z21 n@async_fifo
+Z22 !s108 1723784527.296000
+Z23 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/Async_fifo.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vBIT_SYNC
+Z24 IfE1]hH<E5z40d52bbJ2Kk3
+Z25 VQ@<iRzVDDn5znTNd:Eg>i3
+R4
+Z26 w1723627139
+Z27 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/BIT_SYNC.v
+Z28 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/BIT_SYNC.v
+L0 1
+R8
+r1
+31
+R10
+Z29 n@b@i@t_@s@y@n@c
+Z30 !s100 =5EnbCbNnW>db;3=aIQDB0
+Z31 !s108 1723784527.354000
+Z32 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/BIT_SYNC.v|
+Z33 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/BIT_SYNC.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCLK_GATE
+Z34 !s100 5YkB09Bl]D=n30Z3JDG0Q0
+Z35 I0[mdC4kLV9oJMjUVD3<Tm2
+Z36 V[T_=n^K=eP74_D993nR=c3
+R4
+Z37 w1723262872
+Z38 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Clock_Gating/CLK_GATE.v
+Z39 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Clock_Gating/CLK_GATE.v
+L0 6
+R8
+r1
+31
+Z40 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Clock_Gating/CLK_GATE.v|
+R10
+Z41 n@c@l@k_@g@a@t@e
+Z42 !s108 1723784527.719000
+Z43 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Clock_Gating/CLK_GATE.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCLKDIV
+Z44 IJaS]zJaS`gjQH>1AnZ^_60
+Z45 VH0n204nN<R8OBK]0oG1To2
+R4
+Z46 w1723458636
+Z47 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Clock_Divider/ClkDiv.v
+Z48 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Clock_Divider/ClkDiv.v
+L0 1
+R8
+r1
+31
+R10
+Z49 n@c@l@k@d@i@v
+Z50 !s100 l[DFJgQ6d`1LJfjlW2cHZ0
+Z51 !s108 1723611500.996000
+Z52 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Clock_Divider/ClkDiv.v|
+Z53 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Clock_Divider/ClkDiv.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vClkDiv
+Z54 !s100 Rl]?:BT33_OZ7CGC[8_2o0
+Z55 IbUh9zaKezeF2U>Yc`e`<e3
+Z56 V>PFKzb?Imoai<[d1_=S8O1
+R4
+Z57 w1723611646
+R47
+R48
+L0 2
+R8
+r1
+31
+R53
+R10
+Z58 n@clk@div
+Z59 !s108 1723784527.660000
+R52
+!i10b 1
+!s85 0
+!s101 -O0
+vCLKDIV_MUX
+Z60 !s100 66hGPUF`<n;oOC]2^V4nQ3
+Z61 IzgWG@8M<8KQYF63BzYb;H3
+Z62 V2R7_@ozW@ToFIBz8f?7Qm0
+R4
+Z63 w1723027799
+Z64 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/CLKDIV_MUX/CLKDIV_MUX.v
+Z65 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/CLKDIV_MUX/CLKDIV_MUX.v
+L0 2
+R8
+r1
+31
+Z66 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/CLKDIV_MUX/CLKDIV_MUX.v|
+R10
+Z67 n@c@l@k@d@i@v_@m@u@x
+Z68 !s108 1723784527.598000
+Z69 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/CLKDIV_MUX/CLKDIV_MUX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdata_sampling
+Z70 !s100 [be1Jd8hMK=d9iN?4<63G1
+Z71 IlkZKLW;K>MFcYbZ3Yd9DM1
+Z72 V3ociCJN6C2aXcGRFB<fK50
+R4
+Z73 w1723613849
+Z74 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/data_sampling.v
+Z75 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/data_sampling.v
+L0 1
+R8
+r1
+31
+Z76 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/data_sampling.v|
+R10
+Z77 !s108 1723784528.530000
+Z78 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/data_sampling.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDATA_SYNC
+Z79 !s100 W4Ggj=^e<?YzVzM2=3AH?1
+Z80 Iof_4QkJ1<ljLlR7U_n>AL1
+Z81 VXP?G5W3abVWeEA=XUjGlm2
+R4
+Z82 w1723458835
+Z83 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/DATA_SYNC/DATA_SYNC.v
+Z84 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/DATA_SYNC/DATA_SYNC.v
+L0 1
+R8
+r1
+31
+Z85 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/DATA_SYNC/DATA_SYNC.v|
+R10
+Z86 n@d@a@t@a_@s@y@n@c
+Z87 !s108 1723784527.782000
+Z88 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/DATA_SYNC/DATA_SYNC.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdeserializer
+Z89 !s100 :KQTZO9^:0z=TBo@KQZYB3
+Z90 I8Qefk2T1;O`B6[dFK8:?_1
+Z91 VZC^BMg71NASRa[_16FVGz1
+R4
+Z92 w1723613886
+Z93 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/deserializer.v
+Z94 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/deserializer.v
+L0 1
+R8
+r1
+31
+Z95 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/deserializer.v|
+R10
+Z96 !s108 1723784528.591000
+Z97 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/deserializer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vedge_bit_counter
+Z98 !s100 1ZRcNMC=zEeWheN`E[DIg1
+Z99 IPJ12B][h_[d[_0DKMD_Go1
+Z100 V8RPUg6CYbR4eG:UWfVgk`0
+R4
+Z101 w1723613904
+Z102 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/edge_bit_counter.v
+Z103 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/edge_bit_counter.v
+L0 2
+R8
+r1
+31
+Z104 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/edge_bit_counter.v|
+R10
+Z105 !s108 1723784528.650000
+Z106 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/edge_bit_counter.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfifo_mem
+Z107 !s100 gENAh3DUgz20Y9M0SM?D43
+Z108 IZI^0GmmTQ@QDICdF8U<b:0
+Z109 V1dzJAgoBkbDU:Vo5dZz;e3
+R4
+Z110 w1723614106
+Z111 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_mem.v
+Z112 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_mem.v
+L0 1
+R8
+r1
+31
+Z113 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_mem.v|
+R10
+Z114 !s108 1723784527.417000
+Z115 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_mem.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfifo_rd
+Z116 IenOUgF6nhW42Ukc7OLiIl0
+Z117 V[Tzf_hh`3QdGdU?]a<O[n0
+R4
+Z118 w1723627133
+Z119 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_rd.v
+Z120 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_rd.v
+L0 1
+R8
+r1
+31
+R10
+Z121 !s100 9@YDHKNEe?nzkHABXm]D:2
+Z122 !s108 1723784527.476000
+Z123 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_rd.v|
+Z124 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_rd.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfifo_wr
+Z125 !s100 W1DRo8`8iDY;85`J2cJBH2
+Z126 IJmPiSIV?JzL5UR[Wb:0ON0
+Z127 V9EPX0E:99?;b:RakV^j2Q3
+R4
+Z128 w1723614129
+Z129 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_wr.v
+Z130 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_wr.v
+L0 1
+R8
+r1
+31
+Z131 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_wr.v|
+R10
+Z132 !s108 1723784527.534000
+Z133 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_wr.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux
+Z134 !s100 6fg]4O8@5n5QMTIg?h8Cd1
+Z135 I3ddW9Ab860QS=i8`88>IG2
+Z136 V4KAV_zTNR7^9ChPbhWZc[3
+R4
+Z137 w1695041392
+Z138 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/mux.v
+Z139 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/mux.v
+L0 2
+R8
+r1
+31
+Z140 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/mux.v|
+R10
+Z141 !s108 1723784528.226000
+Z142 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/mux.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vparity_calc
+Z143 !s100 SX6<a2o:jMbZA@cVi;lJ`0
+Z144 IY;Ia]z^A<DGbY2=jjf;U20
+Z145 V@ka97jj0Zl@VSfoeJPADM1
+R4
+Z146 w1723613780
+Z147 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/parity_calc.v
+Z148 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/parity_calc.v
+L0 1
+R8
+r1
+31
+Z149 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/parity_calc.v|
+R10
+Z150 !s108 1723784528.289000
+Z151 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/parity_calc.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vparity_check
+Z152 !s100 S3<NVbD[SE^RzJk^h_B4_0
+Z153 I]ao5NRckaV4JFF>N2zf5T3
+Z154 VY@G5A4hzH[lBk?j8j;2e<2
+R4
+Z155 w1723613919
+Z156 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/parity_check.v
+Z157 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/parity_check.v
+L0 1
+R8
+r1
+31
+Z158 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/parity_check.v|
+R10
+Z159 !s108 1723784528.711000
+Z160 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/parity_check.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vPULSE_GEN
+Z161 !s100 [i>>=6@`4Ecng@XUVc]I?1
+Z162 Iz?FVR=S9=CiHHLBZmje3I2
+Z163 VDlI9cmObXkSRQI;?RCcgV2
+R4
+Z164 w1723027801
+Z165 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/PULSE_GEN/PULSE_GEN.v
+Z166 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/PULSE_GEN/PULSE_GEN.v
+L0 6
+R8
+r1
+31
+Z167 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/PULSE_GEN/PULSE_GEN.v|
+R10
+Z168 n@p@u@l@s@e_@g@e@n
+Z169 !s108 1723784527.845000
+Z170 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/PULSE_GEN/PULSE_GEN.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRegFile
+Z171 !s100 _AN:hm]Hc@i`>>L52dPKW0
+Z172 IVXZcb8P[TG08:e41LOJkG2
+Z173 VXm?D`26SMH_XM<;2gRKfP2
+R4
+Z174 w1723027800
+Z175 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/RegFile/RegFile.v
+Z176 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/RegFile/RegFile.v
+L0 2
+R8
+r1
+31
+Z177 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/RegFile/RegFile.v|
+R10
+Z178 n@reg@file
+Z179 !s108 1723784527.908000
+Z180 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/RegFile/RegFile.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRST_SYNC
+Z181 !s100 NkgCL0Ebn`k3kbaMI:W5C1
+Z182 I@M6GoI^C=G4f5[UnWH[Hm0
+Z183 VWF`nJ6:Rk`1U3;O`F`igm1
+R4
+Z184 w1723458952
+Z185 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/RST_SYNC/RST_SYNC.v
+Z186 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/RST_SYNC/RST_SYNC.v
+L0 1
+R8
+r1
+31
+Z187 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/RST_SYNC/RST_SYNC.v|
+R10
+Z188 n@r@s@t_@s@y@n@c
+Z189 !s108 1723784527.971000
+Z190 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/RST_SYNC/RST_SYNC.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSerializer
+Z191 !s100 FIUG1kNkYD`:eLI;cMZ[21
+Z192 Id?dYRK3VQXUdRODkN[2>g2
+Z193 V]94ISUZFk1ezPo?]hXYz]1
+R4
+Z194 w1723613811
+Z195 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/Serializer.v
+Z196 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/Serializer.v
+L0 2
+R8
+r1
+31
+Z197 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/Serializer.v|
+R10
+Z198 n@serializer
+Z199 !s108 1723784528.349000
+Z200 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/Serializer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vstart_check
+Z201 !s100 `7iW;WW4iTjP:=AdCCKLZ3
+Z202 IOV4KX>MBA_7fbb_1ZAjoS0
+Z203 VeAJOUcGnAJIkJkDQGDGXK3
+R4
+Z204 w1723613943
+Z205 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/start_check.v
+Z206 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/start_check.v
+L0 1
+R8
+r1
+31
+Z207 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/start_check.v|
+R10
+Z208 !s108 1723784528.771000
+Z209 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/start_check.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vstop_check
+Z210 !s100 GFmbJi@QT7?_HWGN]0DK83
+Z211 IMIYF:^SH@2ofQQnY0`O>X3
+Z212 Vgk5LXoNFGE;F2HYekRe121
+R4
+Z213 w1723613970
+Z214 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/stop_check.v
+Z215 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/stop_check.v
+L0 1
+R8
+r1
+31
+Z216 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/stop_check.v|
+R10
+Z217 !s108 1723784528.829000
+Z218 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/stop_check.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSYS_CTRL
+Z219 !s100 WYT3`LW4>C`mVc`lnmG^n2
+Z220 IRThbMKXKT4ZXg9[n;]aoc2
+Z221 V[LT40o^9^3QQLPcSk2RWa2
+R4
+Z222 w1723784525
+Z223 8D:\Digital Eltemsah\Low Power Configurable Multi Clock Digital System\RTL\SYS_CTRL\SYS_CTRL.v
+Z224 FD:\Digital Eltemsah\Low Power Configurable Multi Clock Digital System\RTL\SYS_CTRL\SYS_CTRL.v
+L0 1
+R8
+r1
+31
+Z225 !s90 -reportprogress|300|-work|work|D:\Digital Eltemsah\Low Power Configurable Multi Clock Digital System\RTL\SYS_CTRL\SYS_CTRL.v|
+R10
+Z226 n@s@y@s_@c@t@r@l
+Z227 !s108 1723784528.030000
+Z228 !s107 D:\Digital Eltemsah\Low Power Configurable Multi Clock Digital System\RTL\SYS_CTRL\SYS_CTRL.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSYS_TOP
+Z229 INb<Z5cD4WnmPfBAa;E@`22
+Z230 VzfgFzDN6ZTdza;>fWlI@B1
+R4
+Z231 w1723263102
+Z232 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Top/SYS_TOP.v
+Z233 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Top/SYS_TOP.v
+L0 2
+R8
+r1
+31
+R10
+Z234 n@s@y@s_@t@o@p
+Z235 !s100 Q7GlTl6K_m8_jZ6XdlioT3
+Z236 !s108 1723784528.163000
+Z237 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Top/SYS_TOP.v|
+Z238 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Top/SYS_TOP.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSYS_TOP_TB
+Z239 I=oLU>@YI2A6WhS3Kb<[MA0
+Z240 Va8JePi3^iKO[KI^XcDZZB0
+R4
+Z241 w1723621163
+Z242 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/SYS_TOP_TB/SYS_TOP_TB.v
+Z243 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/SYS_TOP_TB/SYS_TOP_TB.v
+L0 2
+R8
+r1
+31
+R10
+Z244 n@s@y@s_@t@o@p_@t@b
+Z245 !s100 C^`YJ_Co0<zA[oiYoU=D<2
+Z246 !s108 1723784528.090000
+Z247 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/SYS_TOP_TB/SYS_TOP_TB.v|
+Z248 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/SYS_TOP_TB/SYS_TOP_TB.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vUART
+!i10b 1
+Z249 !s100 l;D7e2:d4kcAR04[^<`fk0
+Z250 I5o?c>QKzLh84Q><2F^Nfd0
+Z251 VPm1lmm?=QailL;WSC^79R0
+R4
+R174
+Z252 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TOP/UART.v
+Z253 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TOP/UART.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1723784529.014000
+!s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TOP/UART.v|
+Z254 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TOP/UART.v|
+!s101 -O0
+R10
+Z255 n@u@a@r@t
+vUART_RX
+Z256 IS5h]VZe_G9IMS5_bkYglh0
+Z257 VzA>=T>Wb`VAPEV]maG79M0
+R4
+Z258 w1723612063
+Z259 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/UART_RX.v
+Z260 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/UART_RX.v
+L0 2
+R8
+r1
+31
+R10
+Z261 n@u@a@r@t_@r@x
+Z262 !s100 Wg3Mo463aQ0@I81F5bBmE0
+Z263 !s108 1723784528.890000
+Z264 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/UART_RX.v|
+Z265 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/UART_RX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vuart_rx_fsm
+Z266 !s100 5HHZ6VH2Kj]0U]ZZooFM;3
+Z267 IXb7z52CfH<7G`nO]3Oi@j0
+Z268 V=RBBi2oc@:N=PU`Hm4WFP0
+R4
+Z269 w1723613231
+Z270 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/uart_rx_fsm.v
+Z271 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/uart_rx_fsm.v
+L0 1
+R8
+r1
+31
+Z272 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/uart_rx_fsm.v|
+R10
+!i10b 1
+!s85 0
+Z273 !s108 1723784528.951000
+Z274 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/uart_rx_fsm.v|
+!s101 -O0
+vUART_TX
+Z275 !s100 lI:cf];hJmVUh:ncKd:Ii2
+Z276 I0^VGBk70gbMOFj6SNLG>71
+Z277 V[36n`^nP2R2Zh[HcCJ4Eo1
+R4
+Z278 w1723368305
+Z279 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/UART_TX.v
+Z280 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/UART_TX.v
+L0 1
+R8
+r1
+31
+Z281 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/UART_TX.v|
+R10
+Z282 n@u@a@r@t_@t@x
+Z283 !s108 1723784528.411000
+Z284 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/UART_TX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vuart_tx_fsm
+Z285 !s100 W_l<z1g59S<6M0@;0Ed:12
+Z286 I?[6M8S6a`Mmh??3cnjHEH1
+Z287 V2UNA`C`l09BlW8Un0WlzK2
+R4
+Z288 w1723613721
+Z289 8D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/uart_tx_fsm.v
+Z290 FD:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/uart_tx_fsm.v
+L0 1
+R8
+r1
+31
+Z291 !s90 -reportprogress|300|-work|work|D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/uart_tx_fsm.v|
+R10
+Z292 !s108 1723784528.471000
+Z293 !s107 D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/uart_tx_fsm.v|
+!i10b 1
+!s85 0
+!s101 -O0

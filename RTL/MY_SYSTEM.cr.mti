@@ -1,0 +1,204 @@
+{D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Clock_Divider/ClkDiv.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Clock_Divider/ClkDiv.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ClkDiv
+
+Top level modules:
+	ClkDiv
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/UART_TX.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/UART_TX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_TX
+
+Top level modules:
+	UART_TX
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/Async_fifo.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/Async_fifo.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Async_fifo
+
+Top level modules:
+	Async_fifo
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/uart_rx_fsm.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/uart_rx_fsm.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module uart_rx_fsm
+
+Top level modules:
+	uart_rx_fsm
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/stop_check.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/stop_check.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module stop_check
+
+Top level modules:
+	stop_check
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/deserializer.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/deserializer.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module deserializer
+
+Top level modules:
+	deserializer
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/CLKDIV_MUX/CLKDIV_MUX.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/CLKDIV_MUX/CLKDIV_MUX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CLKDIV_MUX
+
+Top level modules:
+	CLKDIV_MUX
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/SYS_TOP_TB/SYS_TOP_TB.v} {1 {vlog -work work {D:\Digital Eltemsah\Low Power Configurable Multi Clock Digital System\RTL\SYS_TOP_TB\SYS_TOP_TB.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SYS_TOP_TB
+
+Top level modules:
+	SYS_TOP_TB
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/PULSE_GEN/PULSE_GEN.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/PULSE_GEN/PULSE_GEN.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module PULSE_GEN
+
+Top level modules:
+	PULSE_GEN
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/data_sampling.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/data_sampling.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module data_sampling
+
+Top level modules:
+	data_sampling
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/mux.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/mux.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux
+
+Top level modules:
+	mux
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Top/SYS_TOP.v} {1 {vlog -work work {D:\Digital Eltemsah\Low Power Configurable Multi Clock Digital System\RTL\Top\SYS_TOP.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SYS_TOP
+
+Top level modules:
+	SYS_TOP
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ALU/ALU.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ALU/ALU.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_wr.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_wr.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module fifo_wr
+
+Top level modules:
+	fifo_wr
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TOP/UART.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TOP/UART.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART
+
+Top level modules:
+	UART
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/parity_check.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/parity_check.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module parity_check
+
+Top level modules:
+	parity_check
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/uart_tx_fsm.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/uart_tx_fsm.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module uart_tx_fsm
+
+Top level modules:
+	uart_tx_fsm
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Clock_Gating/CLK_GATE.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/Clock_Gating/CLK_GATE.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CLK_GATE
+
+Top level modules:
+	CLK_GATE
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/edge_bit_counter.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/edge_bit_counter.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module edge_bit_counter
+
+Top level modules:
+	edge_bit_counter
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/RST_SYNC/RST_SYNC.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/RST_SYNC/RST_SYNC.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RST_SYNC
+
+Top level modules:
+	RST_SYNC
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_rd.v} {1 {vlog -work work {D:\Digital Eltemsah\Low Power Configurable Multi Clock Digital System\RTL\ASYNC_FIFO\fifo_rd.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module fifo_rd
+
+Top level modules:
+	fifo_rd
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_mem.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/fifo_mem.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module fifo_mem
+
+Top level modules:
+	fifo_mem
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/start_check.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/start_check.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module start_check
+
+Top level modules:
+	start_check
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/RegFile/RegFile.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/RegFile/RegFile.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RegFile
+
+Top level modules:
+	RegFile
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/DATA_SYNC/DATA_SYNC.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/DATA_SYNC/DATA_SYNC.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DATA_SYNC
+
+Top level modules:
+	DATA_SYNC
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/Serializer.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/Serializer.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Serializer
+
+Top level modules:
+	Serializer
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/ASYNC_FIFO/BIT_SYNC.v} {1 {vlog -work work {D:\Digital Eltemsah\Low Power Configurable Multi Clock Digital System\RTL\ASYNC_FIFO\BIT_SYNC.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module BIT_SYNC
+
+Top level modules:
+	BIT_SYNC
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/parity_calc.v} {1 {vlog -work work {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_TX/parity_calc.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module parity_calc
+
+Top level modules:
+	parity_calc
+
+} {} {}} {D:/Digital Eltemsah/Low Power Configurable Multi Clock Digital System/RTL/UART/UART_RX/UART_RX.v} {1 {vlog -work work {D:\Digital Eltemsah\Low Power Configurable Multi Clock Digital System\RTL\UART\UART_RX\UART_RX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_RX
+
+Top level modules:
+	UART_RX
+
+} {} {}}

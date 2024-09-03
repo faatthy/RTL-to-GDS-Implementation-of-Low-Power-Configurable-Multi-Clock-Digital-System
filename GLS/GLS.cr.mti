@@ -1,0 +1,53 @@
+{D:/Digital Eltemsah/GLS/SYS_GLS/SYS_TOP.v} {1 {vlog -work work -vopt -stats=none {D:\Digital Eltemsah\GLS\SYS_GLS\SYS_TOP.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module mux2X1_0
+-- Compiling module mux2X1_6
+-- Compiling module mux2X1_5
+-- Compiling module mux2X1_4
+-- Compiling module mux2X1_3
+-- Compiling module mux2X1_2
+-- Compiling module mux2X1_1
+-- Compiling module RST_SYNC_NUM_STAGES2_test_0
+-- Compiling module RST_SYNC_NUM_STAGES2_test_1
+-- Compiling module DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_test_1
+-- Compiling module fifo_mem_D_SIZE8_F_DEPTH8_P_SIZE4_test_1
+-- Compiling module fifo_rd_P_SIZE4_test_1
+-- Compiling module BIT_SYNC_NUM_STAGES2_BUS_WIDTH4_test_1
+-- Compiling module fifo_wr_P_SIZE4_test_1
+-- Compiling module BIT_SYNC_NUM_STAGES2_BUS_WIDTH4_test_0
+-- Compiling module Async_fifo_D_SIZE8_F_DEPTH8_P_SIZE4_test_1
+-- Compiling module PULSE_GEN_test_1
+-- Compiling module ClkDiv_0_DW01_inc_0
+-- Compiling module ClkDiv_test_0
+-- Compiling module CLKDIV_MUX
+-- Compiling module ClkDiv_1_DW01_inc_0
+-- Compiling module ClkDiv_test_1
+-- Compiling module uart_tx_fsm_test_1
+-- Compiling module Serializer_WIDTH8_test_1
+-- Compiling module mux_test_1
+-- Compiling module parity_calc_WIDTH8_test_1
+-- Compiling module UART_TX_DATA_WIDTH8_test_1
+-- Compiling module uart_rx_fsm_DATA_WIDTH8_test_1
+-- Compiling module edge_bit_counter_test_1
+-- Compiling module data_sampling_test_1
+-- Compiling module deserializer_DATA_WIDTH8_test_1
+-- Compiling module strt_chk_test_1
+-- Compiling module par_chk_DATA_WIDTH8_test_1
+-- Compiling module stp_chk_test_1
+-- Compiling module UART_RX_test_1
+-- Compiling module UART_test_1
+-- Compiling module SYS_CTRL_test_1
+-- Compiling module RegFile_test_1
+-- Compiling module ALU_DW_div_uns_0
+-- Compiling module ALU_DW01_sub_0
+-- Compiling module ALU_DW01_add_0
+-- Compiling module ALU_DW01_add_1
+-- Compiling module ALU_DW02_mult_0
+-- Compiling module ALU_test_1
+-- Compiling module CLK_GATE
+-- Compiling module SYS_TOP
+
+Top level modules:
+	SYS_TOP
+
+} {} {}} {D:/Digital Eltemsah/GLS/SYS_GLS/SYS_TOP_TB.v} {0 vlog\ -work\ work\ -vopt\ -stats=none\ \{D:\\Digital\ Eltemsah\\GLS\\SYS_GLS\\SYS_TOP_TB.v\}\nQuestaSim-64\ vlog\ 2021.1\ Compiler\ 2021.01\ Jan\ 19\ 2021\n--\ Compiling\ module\ SYS_TOP_TB\n**\ Error:\ (vlog-13069)\ D:\\Digital\ Eltemsah\\GLS\\SYS_GLS\\SYS_TOP_TB.v(42):\ near\ \"assign\":\ syntax\ error,\ unexpected\ assign,\ expecting\ ','\ or\ '\}'.\n**\ Error:\ D:\\Digital\ Eltemsah\\GLS\\SYS_GLS\\SYS_TOP_TB.v(62):\ (vlog-13205)\ Syntax\ error\ found\ in\ the\ scope\ following\ 'scan_clk'.\ Is\ there\ a\ missing\ '::'?\n\n {4.0 6.0} {}}

@@ -1,0 +1,64 @@
+module ClkDiv
+#( parameter RATIO_WD = 8)
+(
+    input i_ref_clk,
+    input i_rst_n,
+    input i_clk_en,
+    input [RATIO_WD-1:0] i_div_ratio,
+    output reg o_div_clk
+);
+
+reg o_div_clk_seq;
+
+reg [RATIO_WD-1:0] counter;
+
+wire CLK_DIV_EN;
+
+assign CLK_DIV_EN=(i_clk_en&&((i_div_ratio!='b0)&&(i_div_ratio!=1'b1)))?1'b1:1'b0;
+
+wire odd_flag;    //to check odd condition
+
+assign odd_flag=(i_div_ratio[0])?1'b1:1'b0;
+
+wire [RATIO_WD-2:0] half_count;
+
+assign half_count=(i_div_ratio>>1)-1;
+
+wire [RATIO_WD-2:0] second_counter_odd;     //this counter for ensure the odd for example 1 then 2 another example (5) 2 then 3
+
+assign second_counter_odd=(i_div_ratio>>1);   //   division_ratio/2
+
+reg odd_toggle_flag;       // i will make it to be one on the first toggle and zero when second toggle for odd division ratios 
+
+
+
+always @(posedge i_ref_clk,negedge i_rst_n) begin
+    if (!i_rst_n) begin
+        o_div_clk_seq<=1'b0;
+        counter<='b0;
+        odd_toggle_flag=1'b0;
+
+    end
+    else if (CLK_DIV_EN) begin
+        if(counter==half_count&&(!odd_flag))begin
+          o_div_clk_seq<=~o_div_clk_seq;
+          counter<='b0;
+        end
+        else if (((counter==half_count)&&odd_flag&&odd_toggle_flag)||((counter==second_counter_odd)&&odd_flag&&!odd_toggle_flag)) begin
+            counter<='b0;
+            o_div_clk_seq<=~o_div_clk_seq;
+            odd_toggle_flag<=~odd_toggle_flag;
+        end
+        else begin
+          counter<=counter+1;
+        end
+    end
+end
+
+always @(*)
+begin
+o_div_clk=(CLK_DIV_EN)?o_div_clk_seq:i_ref_clk;
+end
+
+endmodule
+

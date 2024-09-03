@@ -1,0 +1,121 @@
+vlib work
+vsim work.SYS_TOP_TB 
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/DATA_WIDTH \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/CLK \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/RST \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/RX_IN \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/parity_enable \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/parity_type \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/Prescale \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/P_DATA \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/data_valid \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/parity_error \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/framing_error \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/bit_count \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/edge_count \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/edge_bit_en \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/deser_en \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/par_chk_en \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/stp_chk_en \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/strt_chk_en \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/strt_glitch \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/sampled_bit \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_RX/dat_samp_en
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_TX/U0_fsm/current_state
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/U0_ref_sync/BUS_WIDTH \
+sim:/SYS_TOP_TB/DUT/U0_ref_sync/NUM_STAGES \
+sim:/SYS_TOP_TB/DUT/U0_ref_sync/CLK \
+sim:/SYS_TOP_TB/DUT/U0_ref_sync/RST \
+sim:/SYS_TOP_TB/DUT/U0_ref_sync/bus_enable \
+sim:/SYS_TOP_TB/DUT/U0_ref_sync/unsync_bus \
+sim:/SYS_TOP_TB/DUT/U0_ref_sync/sync_bus \
+sim:/SYS_TOP_TB/DUT/U0_ref_sync/enable_pulse_d \
+sim:/SYS_TOP_TB/DUT/U0_ref_sync/Sync_FFs \
+sim:/SYS_TOP_TB/DUT/U0_ref_sync/Pulse_Gen_FF \
+sim:/SYS_TOP_TB/DUT/U0_ref_sync/Sel
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/CLK \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/RST \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/UART_RX_VLD \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/ALU_OUT_VLD \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/UART_RX_DATA \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/RF_RdData \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/RF_RdData_VLD \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/FIFO_FULL \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/ALU_OUT \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/ALU_EN \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/ALU_FUN \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/CLKG_EN \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/RF_Address \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/RF_WrEn \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/RF_RdEn \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/CLKDIV_EN \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/UART_TX_DATA \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/UART_TX_VLD \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/RF_WrData \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/state_reg \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/state_next \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/RF_Address_reg \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/RF_WrData_reg \
+sim:/SYS_TOP_TB/DUT/U0_SYS_CTRL/ALU_FUN
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/CLK \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/RST \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/WrEn \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/RdEn \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/Address \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/WrData \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/RdData \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/RdData_VLD \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/REG0 \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/REG1 \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/REG2 \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/REG3 \
+sim:/SYS_TOP_TB/DUT/U0_RegFile/regArr
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/U0_UART_FIFO/u_fifo_mem/memory
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/U0_UART_FIFO/i_w_clk \
+sim:/SYS_TOP_TB/DUT/U0_UART_FIFO/i_w_inc \
+sim:/SYS_TOP_TB/DUT/U0_UART_FIFO/i_r_clk \
+sim:/SYS_TOP_TB/DUT/U0_UART_FIFO/i_r_inc \
+sim:/SYS_TOP_TB/DUT/U0_UART_FIFO/i_w_data \
+sim:/SYS_TOP_TB/DUT/U0_UART_FIFO/o_r_data \
+sim:/SYS_TOP_TB/DUT/U0_UART_FIFO/o_full \
+sim:/SYS_TOP_TB/DUT/U0_UART_FIFO/o_empty \
+sim:/SYS_TOP_TB/DUT/U0_UART_FIFO/r_addr \
+sim:/SYS_TOP_TB/DUT/U0_UART_FIFO/w_addr
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/UART_TX_O
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/parity_error
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/framing_error
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/U0_ALU/ALU_FUN
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/U0_ALU/ALU_OUT
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/U0_ALU/OUT_VALID
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/U0_CLKDIV_MUX/IN \
+sim:/SYS_TOP_TB/DUT/U0_CLKDIV_MUX/OUT
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/i_ref_clk \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/i_rst \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/i_clk_en \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/i_div_ratio \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/o_div_clk \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/count \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/edge_flip_half \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/edge_flip_full \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/div_clk \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/odd_edge_tog \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/is_one \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/is_zero \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/clk_en \
+sim:/SYS_TOP_TB/DUT/U1_ClkDiv/is_odd
+run -all
